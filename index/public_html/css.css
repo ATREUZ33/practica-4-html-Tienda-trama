@@ -1,0 +1,250 @@
+/* BODY me pierdo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e8;
+}
+
+/* encabezado pongo esto porque me pierdo */
+.encabezado {
+    background-color: #1b2a4a;
+}
+.flexbox-encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox-encabezado img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Navegador no tengo que perderme*/
+.navegador {
+    padding: 15px;
+}
+.flexbox-navegador {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.flexbox-navegador a {
+    text-decoration: none;
+    color: #1b2a4a;
+    background-color: #f5f1e8;
+    border: 2px solid #1b2a4a;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.flexbox-navegador a:hover {
+    background-color: #1b2a4a;
+    color: #d9a441;
+}
+
+/* Banner no te pierdas  */
+.baner {
+   overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flexbox-baner {
+display: flex;
+    width: 400%;
+    animation: baner 12s infinite;
+}
+.flexbox-baner div {
+    width: 25%;
+}
+.flexbox-baner img {
+   width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+@keyframes baner {
+  0%   { transform: translateX(0%); }
+    20%  { transform: translateX(0%); }
+    25%  { transform: translateX(-25%); }
+    45%  { transform: translateX(-25%); }
+    50%  { transform: translateX(-50%); }
+    70%  { transform: translateX(-50%); }
+    75%  { transform: translateX(-75%); }
+    95%  { transform: translateX(-75%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Contenido no me perdere  */
+.contenido {
+    padding: 40px 20px;
+}
+.contenido-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contenido-inner h2 {
+    color: #1b2a4a;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.gridbox-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.card-contenido {
+    border: 2px dashed #2f5d8a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-contenido:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(27, 42, 74, 0.15);
+}
+.card-contenido img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+.card-contenido h3 {
+    color: #1b2a4a;
+    margin: 10px 0 5px;
+}
+.card-contenido p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* suscribete pero no te pierdas */
+.suscribir {
+    background-color: #2f5d8a;
+    padding: 40px 20px;
+    text-align: center;
+}
+.suscribir h2 {
+    color: #d9a441;
+    margin-bottom: 10px;
+}
+.suscribir p {
+    color: #e4ecf5;
+    margin-bottom: 20px;
+}
+.suscribir-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.suscribir-form input {
+    max-width: 280px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.suscribir-form button {
+    background-color: #d9a441;
+    color: #1B2A4A;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.suscribir-form button:hover {
+    background-color: #b23a48;
+    color: #f5f1e8;
+}
+
+/* Pie astilla cuidado */
+.pie-superior {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.pie-izquierdo h3, .pie-derecho h3 {
+    color: #d9a441;
+    margin-bottom: 10px;
+}
+.pie-izquierdo p {
+    color: #e4ecf5;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.redes {
+    display: flex;
+    gap: 10px;
+}
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #d9a441;
+}
+.redes a img {
+    width: 20px;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(35%) saturate(677%) hue-rotate(1deg) brightness(102%) contrast(98%);
+}
+.pie-inferior {
+    border-top: 1px dashed #3d5680;
+    text-align: center;
+    padding: 15px;
+    color: #e4ecf5;
+    font-size: 13px;
+}
+
+/* Responsive ya no me pierdo mucho  */
+@media (max-width: 900px) {
+    .gridbox-contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Producto aveces me hueveo  */
+.flexbox-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card-producto {
+    text-align: center;
+    width: 200px;
+    border: 2px dashed #2f5d8a;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(27, 42, 74, 0.15);
+}
+.card-producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card-producto h3 {
+    color: #1b2a4a;
+    margin: 10px 0 5px;
+}
+.card-producto p {
+    color: #d9a441;
+    font-weight: bold;
+}
